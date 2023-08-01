@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ноутбук Apple MacBook Air 13 M1 (MGN63) Space Grey</h1>
+
+
+    <div class="main">
+
+        <!-- Фото -->
+        <div class="photoConteiner">
+            
+            <img id="photo" src="" alt="" srcset="">
+            <span id="before">></span>
+            <span id="next">></span>
+            <ul class="pointsNavigation">
+                <li class="pointNavigation acrivePointNavigation"></li>
+                <li class="pointNavigation"></li>
+                <li class="pointNavigation"></li>
+                <li class="pointNavigation"></li>
+                <li class="pointNavigation"></li>
+                <li class="pointNavigation"></li>
+            </ul>
+        </div>
+
+
+        <!-- Основная информация -->
+        <div class="mainInfo">
+            <p id="infoColor">Цвет: Space Grey</p>
+            <ul class="colorPoints">
+                <li class="pointsColor active" id="greyPoints"></li>
+                <li class="pointsColor" id="silverPoints"></li>
+                <li class="pointsColor" id="purplish-whitePoints"></li>
+            </ul>
+            <h2>Основные характеристики</h2>
+            <span>Короткие технические характеристики</span>
+            <p id="characteristics">13.3" (2560x1600) IPS / Apple M1 / 8 core CPU / RAM-8 ГБ / SSD-256 ГБ/ 7 core GPU / Bluetooth
+            Wi-Fi / macOS / Без ОД / 1.29 кг</p>
+            
+            <!-- Цена -->
+            <div id="cost">46 499 ₴ </div>
+
+            <!-- Кнопки покупки -->
+            <div class="buttonOrders">
+                <button class="buttonBuyNow">Купить</button>
+                <button class="buttonInstallment">деньги / месяц</button>
+            </div>
+            <div class="additionally"><img id="part" src="/img/photo/Part.png" alt="" srcset=""> Оплата частями 7 платежей</div>
+        </div>
+    </div>
+    
+
+    <!-- Дополнительные улудшения -->
+    <h2 class="twantyLeft">Настройка заказа:</h2>
+
+    <div class="customization">
+
+
+        <div class="customizationBlock RAM"><span class="costomizationText">Оперативная память:</span>
+            <div id="form-engine">
+                <input class="activeRAM" name="RAM" type="radio" id="RAM-8" value="800" checked>
+                <label for="RAM-8">8 ГБ</label>
+            </div>
+
+            <div id="form-engine">
+                <input name="RAM" type="radio" id="RAM-16" value="1500">
+                <label for="RAM-16">16 ГБ</label>
+            </div>
+        </div>
+
+
+        <div class="customizationBlock SSD"><span class="costomizationText">SSD диск:</span>
+            
+            <div id="form-engine">
+                <input class="activeSSD" name="SSD" type="radio" id="SSD-256" value="700" checked>
+                <label for="SSD-256">256 ГБ</label>
+            </div>
+            <div id="form-engine">
+                <input name="SSD" type="radio" id="SSD-512" value="1100">
+                <label for="SSD-512">512 ГБ</label>
+            </div>
+            <div id="form-engine">
+                <input name="SSD" type="radio" id="SSD-1000" value="1800">
+                <label for="SSD-1000">1 ТБ</label>
+            </div>
+            <div id="form-engine">
+                <input name="SSD" type="radio" id="SSD-2000" value="4100">
+                <label for="SSD-128">2 ТБ</label>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <script src="jQuery/jQuery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

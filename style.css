@@ -1,0 +1,207 @@
+
+body {
+    margin: 10px;
+    padding: 0;
+}
+ul, ol {
+    list-style-type: none;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    
+}
+
+/* Изображение */
+
+.photoConteiner {
+    position: relative;
+    width: 800px;
+    margin-right: 10px;
+}
+
+#photo {
+    /* position: absolute; */
+    margin: 0 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Кнопки переклюцения изображения */
+
+#next, #before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80px;
+    height: 25%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.182);
+    z-index: 100;
+    top: calc(50% - 15%);
+    cursor: pointer;
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    transition: all 0.5s;
+}
+
+#next{
+    content: ">";
+    left: calc(100% - 80px );
+}
+#before {
+    transform: rotate(180deg);
+}
+
+#next:hover, #before:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Точки нафигации фото */
+
+.pointsNavigation {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+}
+.pointNavigation {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(158, 158, 158);
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.pointNavigation:hover {
+    background-color: rgb(239, 60, 105);
+}
+
+
+.acrivePointNavigation {
+    background-color: rgb(247, 20, 77);
+    transition: all 0.5s;
+}
+
+
+.mainInfo {
+    border-left: 2px solid rgb(229, 232, 229);
+    border-bottom: 2px solid rgb(229, 232, 229);
+    padding: 0 20px;
+}
+
+/* Точки выбора цвета */
+
+.pointsColor {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.pointsColor:hover {
+    border: 3px solid rgb(100, 188, 122);
+    padding: 0;
+}
+
+#greyPoints {
+    background-color: grey;
+}
+#silverPoints {
+    background-color: silver;
+}
+#purplish-whitePoints {
+    background-color: peachpuff;
+}
+
+.active {
+    border: 3px solid rgb(43, 166, 74);
+    padding: 0;
+}
+
+/* Цена */
+
+#cost {
+    margin-top: 150px;
+    font-size: 26px;
+}
+
+#costDollar {
+
+}
+
+/* Кнопки */
+
+.buttonOrders {
+    margin: 20px 0;
+}
+
+.buttonBuyNow, .buttonInstallment {
+    width: 200px;
+    height: 40px;
+    border: 2px solid rgb(247, 20, 77);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.buttonBuyNow {
+    background-color: rgb(247, 20, 77);
+    color: white;
+    margin-right: 20px; ;
+}
+.buttonInstallment{
+    color: rgb(247, 20, 77);
+}
+
+.buttonBuyNow:hover,
+.buttonInstallment:hover {
+    opacity: 0.7;
+}
+/* Оплата частинами */
+
+.additionally {
+    font-size: 20px;
+}
+
+#part {
+    width: 20px;
+} 
+
+/* Кастамизация */
+
+.twantyLeft {
+    margin-left: 20px;
+}
+
+.customization {
+    display: flex;
+    width: 400px;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+.customizationBlock {
+}
+
+.costomizationText {
+    font-size: 26px;
+    line-height: 50px;
+}
